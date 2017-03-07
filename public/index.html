@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="findAll">
+	<head>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="hello.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="FindAll">
+			<li ng-repeat="new in news"> 
+				<p>The ID is {{new.id}}</p>
+				<p>The content is {{new.author}}</p>
+				<p>The content is {{new.news}}</p>
+			
+			</li>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="create">
+	<head>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="hello.js"></script>
+	</head>
+	<body>
+		<div ng-controller="Create">
+			Author: <input type="text" ng-model="author">
+			Noticia: <input type="text" ng-model="news">
+			<button value="create" ng-click="createNews(author, news)">create</button>
+			<p>The ID is {{news.id}}</p>
+			<p>The content is {{news.author}}</p>
+			<p>The content is {{news.news}}</p>
+		</div>
+	</body>
+</html>
